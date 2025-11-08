@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Dashboard</title>
+    <link rel="stylesheet" href="fitness.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Left Column -->
+        <div class="left-column">
+            <!-- Calories Burnt -->
+            <div class="card stat-card">
+                <div class="card-header">
+                    <div class="card-title">Calories<br>Burnt</div>
+                    <div class="card-icon">🔥</div>
+                </div>
+                <div class="card-value">
+                    <span class="value">1.4k</span>
+                    <span class="unit">kCal</span>
+                </div>
+            </div>
+
+            <!-- Distance Covered -->
+            <div class="card stat-card">
+                <div class="card-header">
+                    <div class="card-title">Distance<br>Covered</div>
+                    <div class="card-icon">🏃</div>
+                </div>
+                <div class="card-value">
+                    <span class="value">3.8</span>
+                    <span class="unit">km</span>
+                </div>
+            </div>
+
+            <!-- Calendar -->
+            <div class="card calendar-card">
+                <div class="calendar-header">
+                    <h3>August 2024</h3>
+                    <div class="calendar-nav">
+                        <button class="nav-btn">←</button>
+                        <button class="nav-btn">→</button>
+                    </div>
+                </div>
+                <div class="calendar-body">
+                    <div class="weekdays">
+                        <div class="weekday">S</div>
+                        <div class="weekday">M</div>
+                        <div class="weekday">T</div>
+                        <div class="weekday">W</div>
+                        <div class="weekday">T</div>
+                        <div class="weekday">F</div>
+                        <div class="weekday">S</div>
+                    </div>
+                    <div class="dates">
+                        <div class="date">04</div>
+                        <div class="date">05</div>
+                        <div class="date">06</div>
+                        <div class="date active">07</div>
+                        <div class="date">08</div>
+                        <div class="date">09</div>
+                        <div class="date">10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Hours -->
+            <div class="card stat-card">
+                <div class="card-header">
+                    <div class="card-title">Total<br>Hours</div>
+                    <div class="card-icon">📊</div>
+                </div>
+                <div class="card-value">
+                    <span class="value">7,5</span>
+                    <span class="unit">hours</span>
+                </div>
+            </div>
+
+            <!-- Time in Bed -->
+            <div class="card stat-card">
+                <div class="card-header">
+                    <div class="card-title">Time in<br>Bed</div>
+                    <div class="card-icon">🛏️</div>
+                </div>
+                <div class="card-value">
+                    <span class="value">5,5</span>
+                    <span class="unit">hours</span>
+                </div>
+            </div>
+
+            <!-- Restfulness -->
+            <div class="card stat-card">
+                <div class="card-header">
+                    <div class="card-title">Restful-<br>ness</div>
+                    <div class="card-icon">🌙</div>
+                </div>
+                <div class="card-value">
+                    <span class="value">82</span>
+                    <span class="unit">%</span>
+                </div>
+            </div>
+
+            <!-- Resting Heart Rate -->
+            <div class="card stat-card">
+                <div class="card-header">
+                    <div class="card-title">Resting<br>Heart Rate</div>
+                    <div class="card-icon">❤️</div>
+                </div>
+                <div class="card-value">
+                    <span class="value">6</span>
+                    <span class="unit">hours</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Cycle Statistics -->
+            <div class="card cycle-card">
+                <h2 class="section-title">Cycle Statistics</h2>
+                <div class="cycle-stats">
+                    <div class="stat-item">
+                        <svg class="progress-circle" width="100" height="100">
+                            <circle class="progress-bg" cx="50" cy="50" r="40"/>
+                            <circle class="progress-bar pink" cx="50" cy="50" r="40" 
+                                    style="stroke-dasharray: 251.2; stroke-dashoffset: 167.5;"/>
+                        </svg>
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">days</div>
+                        <div class="stat-name">Period Length</div>
+                    </div>
+                    <div class="stat-item">
+                        <svg class="progress-circle" width="100" height="100">
+                            <circle class="progress-bg" cx="50" cy="50" r="40"/>
+                            <circle class="progress-bar green" cx="50" cy="50" r="40" 
+                                    style="stroke-dasharray: 251.2; stroke-dashoffset: 83.7;"/>
+                        </svg>
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">days</div>
+                        <div class="stat-name">Cycle Variation</div>
+                    </div>
+                    <div class="stat-item">
+                        <svg class="progress-circle" width="100" height="100">
+                            <circle class="progress-bg" cx="50" cy="50" r="40"/>
+                            <circle class="progress-bar purple" cx="50" cy="50" r="40" 
+                                    style="stroke-dasharray: 251.2; stroke-dashoffset: 41.9;"/>
+                        </svg>
+                        <div class="stat-number">29</div>
+                        <div class="stat-label">days</div>
+                        <div class="stat-name">Cycle Length</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activities -->
+            <div class="card activities-card">
+                <div class="activities-grid">
+                    <div class="activity">🏃‍♂️</div>
+                    <div class="activity">🏋️</div>
+                    <div class="activity">🧘</div>
+                    <div class="activity">🤸‍♀️</div>
+                    <div class="activity">🏊</div>
+                    <div class="activity">🚴</div>
+                    <div class="activity">🏃‍♀️</div>
+                    <div class="activity">🤼</div>
+                </div>
+            </div>
+
+            <!-- Profile -->
+            <div class="card profile-card">
+                <div class="profile-header">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3CradialGradient id='grad'%3E%3Cstop offset='0%25' style='stop-color:%23444;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23222;stop-opacity:1' /%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23grad)'/%3E%3Ctext x='50' y='62' font-size='32' font-weight='bold' text-anchor='middle' fill='%23fff' font-family='Arial'%3EJT%3C/text%3E%3C/svg%3E" alt="Profile" class="profile-img">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Joshua Thompson</h3>
+                        <p class="profile-age">34 years old</p>
+                    </div>
+                </div>
+                <p class="profile-bio">Joshua is a personal trainer specializing in weight loss and body transformation. He creates personalized workout plan...</p>
+                <div class="profile-tags">
+                    <span class="tag">Weight Loss Workouts</span>
+                    <span class="tag highlight">5 times/week</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
