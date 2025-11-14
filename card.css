@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #d4c4bc 0%, #c9b8b0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    perspective: 1000px;
+}
+
+.card {
+    width: 420px;
+    background: #000000;
+    border-radius: 50px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        0 30px 60px rgba(0, 0, 0, 0.4),
+        0 0 0 15px #000000,
+        0 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Abstract Background */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 50px 50px 0 0;
+}
+
+.red-wave {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 500px;
+    height: 350px;
+    background: radial-gradient(ellipse at 30% 40%, 
+        #ff3300 0%,
+        #cc0000 30%,
+        #660000 60%,
+        #330000 80%,
+        transparent 100%);
+    border-radius: 45% 55% 60% 40%;
+    transform: rotate(-15deg);
+    filter: blur(1px);
+}
+
+.red-wave::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(ellipse at center,
+        rgba(255, 51, 0, 0.8) 0%,
+        rgba(204, 0, 0, 0.6) 40%,
+        transparent 70%);
+    border-radius: 50% 40% 55% 45%;
+    filter: blur(30px);
+}
+
+.red-wave::after {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg,
+        rgba(255, 68, 0, 0.9) 0%,
+        rgba(255, 34, 0, 0.7) 50%,
+        transparent 100%);
+    border-radius: 60% 40% 50% 50%;
+    filter: blur(20px);
+}
+
+/* Profile Section */
+.profile-section {
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    margin-top: 180px;
+}
+
+.profile-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #a8a8a8 0%, #d0d0d0 100%);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.title {
+    color: #a0a0a0;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+/* Stats Container */
+.stats-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid #333333;
+    border-radius: 25px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.stat-value {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.stat-label {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Message Button */
+.message-btn {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background: #ffffff;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 30px;
+    padding: 22px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.message-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+.message-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        max-width: 380px;
+        padding: 30px;
+        border-radius: 40px;
+    }
+    
+    .name {
+        font-size: 30px;
+    }
+    
+    .title {
+        font-size: 18px;
+    }
+    
+    .stats-container {
+        padding: 20px 20px;
+        gap: 15px;
+    }
+    
+    .stat-value {
+        font-size: 20px;
+    }
+    
+    .stat-label {
+        font-size: 13px;
+    }
+}
