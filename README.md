@@ -10,3 +10,7 @@
 <h1>Dark UI Profile Card</h1>
 
 <img width="534" height="802" alt="Screenshot 2025-11-14 121903" src="https://github.com/user-attachments/assets/533b1af5-038c-49c1-a977-15da100189e0" />
+
+<h1>Screen Time Recording</h1>
+
+<img width="1508" height="860" alt="Screenshot 2025-11-14 221835" src="https://github.com/user-attachments/assets/ab31ecb4-4473-482e-bac7-8192c7b9779a" />
