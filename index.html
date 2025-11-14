@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Time Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Left Column -->
+        <div class="column">
+            <!-- Screen Time Notifications Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">SCREEN TIME NOTIFICATIONS</h3>
+                    <button class="dots-btn">⋯</button>
+                </div>
+                <div class="card-body">
+                    <p class="small-label">Today Screen Time</p>
+                    <div class="time-row">
+                        <h1 class="big-time">7h 30m</h1>
+                        <div class="clock-icon">
+                            <div class="clock-circle outer"></div>
+                            <div class="clock-circle middle"></div>
+                            <div class="clock-circle inner"></div>
+                        </div>
+                    </div>
+                    <p class="description">You have 30 minutes left before reaching your screen time limit. Try to calmly wrap up your activity.</p>
+                    <button class="primary-btn">Got it, Thanks</button>
+                    <button class="link-btn">Adjust Time Limit</button>
+                </div>
+            </div>
+
+            <!-- Instagram Time Limit Card -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="app-title">
+                        <div class="instagram-icon">
+                            <div class="ig-inner"></div>
+                        </div>
+                        <span class="app-label">Instagram Time Limit</span>
+                    </div>
+                    <button class="dots-btn">⋯</button>
+                </div>
+                <div class="card-body">
+                    <p class="description">You have reached your screen time limit for Instagram app. Try to calmly wrap up your activity.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="column">
+            <!-- Main Screen Time Card -->
+            <div class="card large-card">
+                <div class="card-header">
+                    <button class="back-btn">←</button>
+                    <h2 class="page-title">Screen Time</h2>
+                    <button class="dots-btn">⋯</button>
+                </div>
+                <div class="card-body">
+                    <!-- Toggle -->
+                    <div class="toggle-wrapper">
+                        <button class="toggle-option active">Daily</button>
+                        <button class="toggle-option">Weekly</button>
+                    </div>
+
+                    <!-- Daily Average -->
+                    <div class="average-block">
+                        <p class="small-label">Daily Average</p>
+                        <div class="average-row">
+                            <h1 class="huge-time">8h 28m</h1>
+                            <div class="badge green">
+                                <span>-12.56%</span>
+                                <span class="badge-icon">↓</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chart -->
+                    <div class="chart-wrapper">
+                        <div class="y-axis">
+                            <span>8h</span>
+                            <span>6h</span>
+                            <span>4h</span>
+                            <span>2h</span>
+                            <span>0</span>
+                        </div>
+                        <div class="chart-area">
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 75%;">
+                                    <div class="segment blue" style="height: 40%;"></div>
+                                    <div class="segment purple" style="height: 25%;"></div>
+                                    <div class="segment pink" style="height: 20%;"></div>
+                                    <div class="segment green" style="height: 15%;"></div>
+                                </div>
+                                <span class="day-label">S</span>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 55%;">
+                                    <div class="segment blue" style="height: 45%;"></div>
+                                    <div class="segment purple" style="height: 20%;"></div>
+                                    <div class="segment pink" style="height: 20%;"></div>
+                                    <div class="segment green" style="height: 15%;"></div>
+                                </div>
+                                <span class="day-label">M</span>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 70%;">
+                                    <div class="segment blue" style="height: 40%;"></div>
+                                    <div class="segment purple" style="height: 30%;"></div>
+                                    <div class="segment pink" style="height: 15%;"></div>
+                                    <div class="segment green" style="height: 15%;"></div>
+                                </div>
+                                <span class="day-label">T</span>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 85%;">
+                                    <div class="segment blue" style="height: 35%;"></div>
+                                    <div class="segment purple" style="height: 35%;"></div>
+                                    <div class="segment pink" style="height: 20%;"></div>
+                                    <div class="segment green" style="height: 10%;"></div>
+                                </div>
+                                <span class="day-label">W</span>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 50%;">
+                                    <div class="segment blue" style="height: 50%;"></div>
+                                    <div class="segment purple" style="height: 25%;"></div>
+                                    <div class="segment pink" style="height: 15%;"></div>
+                                    <div class="segment green" style="height: 10%;"></div>
+                                </div>
+                                <span class="day-label">T</span>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 80%;">
+                                    <div class="segment blue" style="height: 35%;"></div>
+                                    <div class="segment purple" style="height: 30%;"></div>
+                                    <div class="segment pink" style="height: 20%;"></div>
+                                    <div class="segment green" style="height: 15%;"></div>
+                                </div>
+                                <span class="day-label">F</span>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 65%;">
+                                    <div class="segment blue" style="height: 40%;"></div>
+                                    <div class="segment purple" style="height: 25%;"></div>
+                                    <div class="segment pink" style="height: 20%;"></div>
+                                    <div class="segment green" style="height: 15%;"></div>
+                                </div>
+                                <span class="day-label">S</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="categories">
+                        <div class="category">
+                            <div class="cat-icon blue-bg">👥</div>
+                            <div class="cat-info">
+                                <span class="cat-name">Social</span>
+                                <span class="cat-time">4h 27m</span>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="cat-icon purple-bg">🎮</div>
+                            <div class="cat-info">
+                                <span class="cat-name">Entertainment</span>
+                                <span class="cat-time">2h 15m</span>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="cat-icon green-bg">💼</div>
+                            <div class="cat-info">
+                                <span class="cat-name">Productivity</span>
+                                <span class="cat-time">1h 5m</span>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="cat-icon orange-bg">💰</div>
+                            <div class="cat-info">
+                                <span class="cat-name">Finance</span>
+                                <span class="cat-time">35m</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Update Info -->
+                    <div class="update-line">
+                        <span class="clock-small">🕐</span>
+                        <span class="update-text">Latest update</span>
+                        <span class="update-time">Today, 22:15</span>
+                    </div>
+
+                    <!-- Reminder -->
+                    <div class="reminder-box">
+                        <div class="reminder-header">
+                            <span class="reminder-title">Screen time reminder</span>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+                        <p class="reminder-desc">We'll remind you when you've reached the maximum screen time allowed for the day.</p>
+                        <div class="range-wrapper">
+                            <input type="range" min="1" max="12" value="8" class="range-slider">
+                            <div class="range-labels">
+                                <span>1</span>
+                                <span>6</span>
+                                <span>12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column">
+            <!-- Most Used Apps Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">MOST USED APPS</h3>
+                    <button class="dots-btn">⋯</button>
+                </div>
+                <div class="card-body">
+                    <div class="app-row">
+                        <div class="app-icon telegram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                            </svg>
+                        </div>
+                        <span class="app-name">Telegram</span>
+                        <span class="app-duration">4h 15m</span>
+                        <span class="chevron">›</span>
+                    </div>
+                    <div class="app-row">
+                        <div class="app-icon spotify">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.73 14.52c-.15.23-.45.31-.68.16-1.88-1.15-4.24-1.41-7.03-.77-.27.06-.54-.09-.6-.36-.06-.27.09-.54.36-.6 3.05-.7 5.67-.4 7.75.89.23.15.31.45.2.68zm.97-2.16c-.19.29-.58.38-.87.19-2.15-1.32-5.42-1.71-7.96-.93-.33.1-.68-.09-.78-.42-.1-.33.09-.68.42-.78 2.91-.89 6.52-.46 8.99 1.07.29.19.38.58.2.87zm.08-2.24c-2.58-1.53-6.83-1.67-9.29-.93-.4.12-.82-.11-.94-.51-.12-.4.11-.82.51-.94 2.82-.86 7.52-.69 10.48 1.07.36.21.48.68.27 1.04-.21.36-.68.48-1.03.27z"/>
+                            </svg>
+                        </div>
+                        <span class="app-name">Spotify</span>
+                        <span class="app-duration">3h 25m</span>
+                        <span class="chevron">›</span>
+                    </div>
+                    <div class="app-row">
+                        <div class="app-icon pinterest">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 4.26 2.68 7.9 6.44 9.34-.09-.78-.17-1.98.04-2.83.18-.77 1.2-5.08 1.2-5.08s-.31-.61-.31-1.52c0-1.42.82-2.48 1.85-2.48.87 0 1.29.65 1.29 1.44 0 .88-.56 2.19-.85 3.41-.24 1.02.51 1.86 1.52 1.86 1.82 0 3.22-1.92 3.22-4.69 0-2.45-1.76-4.16-4.28-4.16-2.92 0-4.63 2.19-4.63 4.45 0 .88.34 1.83.76 2.34.08.1.09.19.07.29-.08.31-.24.98-.28 1.12-.05.18-.16.22-.37.13-1.28-.6-2.08-2.47-2.08-3.98 0-3.23 2.35-6.19 6.77-6.19 3.55 0 6.31 2.53 6.31 5.91 0 3.53-2.23 6.37-5.32 6.37-1.04 0-2.01-.54-2.34-1.17 0 0-.51 1.95-.64 2.43-.23.89-.85 2-1.27 2.68.96.3 1.98.46 3.04.46 5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
+                            </svg>
+                        </div>
+                        <span class="app-name">Pinterest</span>
+                        <span class="app-duration">1h 8m</span>
+                        <span class="chevron">›</span>
+                    </div>
+                    <div class="app-row">
+                        <div class="app-icon chrome">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 2c4.41 0 8 3.59 8 8 0 1.85-.63 3.55-1.69 4.9l-2.45-4.24c.32-.59.5-1.27.5-1.99 0-2.21-1.79-4-4-4H7.83c1.38-1.71 3.48-2.8 5.84-2.8L12 4zm0 16c-4.41 0-8-3.59-8-8 0-1.85.63-3.55 1.69-4.9l2.45 4.24c-.32.59-.5 1.27-.5 1.99 0 2.21 1.79 4 4 4h4.53c-1.38 1.71-3.48 2.8-5.84 2.8L12 20zm0-6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                            </svg>
+                        </div>
+                        <span class="app-name">Google Chrome</span>
+                        <span class="app-duration">45m</span>
+                        <span class="chevron">›</span>
+                    </div>
+                    <div class="app-row">
+                        <div class="app-icon camera">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 15.2c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                                <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm11 15c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h3.5l1.5-2h4l1.5 2H19c.55 0 1 .45 1 1v10z"/>
+                            </svg>
+                        </div>
+                        <span class="app-name">Camera</span>
+                        <span class="app-duration">45m</span>
+                        <span class="chevron">›</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Screen Time Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">TOTAL SCREEN TIME</h3>
+                    <button class="dots-btn">⋯</button>
+                </div>
+                <div class="card-body center">
+                    <h1 class="total-time">42 hours</h1>
+                    <p class="date-text">7 - 13 Nov 2025</p>
+                    <div class="trophy-icon">
+                        <div class="trophy-circle"></div>
+                        <div class="trophy-inner">🏆</div>
+                    </div>
+                    <h3 class="success-title">Screen Time Reduced</h3>
+                    <p class="success-text">You've successfully reduced your screen time compared to last week.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
